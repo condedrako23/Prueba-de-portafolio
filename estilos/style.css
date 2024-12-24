@@ -11,5 +11,34 @@
   align-items: center;
   background-image: url(https://cdn.pixabay.com/photo/2018/09/16/22/08/software-3682509_1280.jpg);
   background-size: cover;
-  background-repeat: no-repeat;
+}
+
+.cont-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+@keyframes animacion {
+  from {
+    opacity: 0;
+    scale: 10%;
+  }
+
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
+}
+
+.cont-cards {
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+
+  animation-timeline: --image;
+  animation-name: animacion;
+
+
+  animation-range: entry 10% cover 50%;
+  animation-fill-mode: both;
 }
