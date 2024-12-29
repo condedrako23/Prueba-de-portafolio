@@ -36,14 +36,14 @@
               <a class="nav-link active text-white" aria-current="page" href="#">Sobre mi</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">Trabajos realizados</a>
+              <a class="nav-link text-white" href="#Proyectos">Trabajos realizados</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">Formacion
+              <a class="nav-link text-white" href="#Formacion">Formacion
               </a>
             </li>
             <li class="nav-item ">
-              <a class="nav-link text-white " href="#">Contacto</a>
+              <a class="nav-link text-white " href="#contacto">Contacto</a>
             </li>
 
           </ul>
@@ -52,14 +52,14 @@
     </nav>
   </header>
   <main>
-    <section class="Biografia p-4 text-white">
+    <section class="Biografia p-4 text-white" id="Biografia">
       <div class="conteiner">
         <h2>Sobre mi</h2>
         <p>Desarrollador web con conocimiento basico en HTML , CSS , Javascript y BOOSTRAP </p>
 
       </div>
     </section>
-    <section class="cont-proyect ">
+    <section class="cont-proyect " id="Proyectos">
 
       <h2 class="p-4 text-center">Trabajos realizados</h2>
       <div class="cont-cards text-center m-3">
@@ -117,7 +117,7 @@
       </div>
     </section>
 
-    <section class="cont-f m-5 text-center">
+    <section class="cont-f m-5 text-center" id="Formacion">
       <h2>Formacion</h2>
       <div class="cont-formacion m-5">
         <div class="card" style="width: 18rem;">
@@ -135,10 +135,10 @@
           </div>
         </div>
         <div class="card" style="width: 18rem;">
-          <img src="./assets/Certificado_de_aprobacin.pdf.jpg" class="card-img-top"
-            alt="certificado de algoritmos en programacion">
+          <img src="https://lavanguardianoticias.com.ar/uploads/noticias/5/2019/05/5ce4bb386baff_777_437!.jpg"
+            class="card-img-top" alt="certificado de algoritmos en programacion">
           <div class="card-body text-bg-dark">
-            <p class="card-text">Curso de algoritmos en programacion (segunda edicion).</p>
+            <p class="card-text">titulo secundario jeje .</p>
           </div>
         </div>
 
@@ -147,33 +147,39 @@
 
 
     </section>
-    <section class="form">
-      <div class="cont-form">
-        <form action="">
-          <ul>
-            <li>
-              <label for="Name">Nombre:</label>
-              <input type="text">
-            </li>
-            <li>
-              <label for="Mail">Correo electronico:</label>
-              <input type="email" name="" id="">
-            </li>
-            <li>
-              <label for="msg">Mensaje</label>
-              <textarea name="mensaje" id=""></textarea>
-            </li>
-            <li class="button">
-              <button type="submit">Envíe su mensaje</button>
-            </li>
+    <section class=" formulario mb-5" id="contacto">
 
-          </ul>
+      <div class="container mt-5">
+        <h2 class="text-center mb-4">Contacto</h2>
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Nombre completo</label>
+            <input type="text" class="form-control" id="name" placeholder="Ingresa tu nombre completo" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label">Correo Electrónico</label>
+            <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="phone" class="form-label">Teléfono</label>
+            <input type="tel" class="form-control" id="phone" placeholder="Ingresa tu número de teléfono">
+          </div>
+
+          <div class="mb-3">
+            <label for="message" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="message" rows="5" placeholder="Escribe tu mensaje aquí"
+              required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary w-100">Enviar</button>
         </form>
       </div>
     </section>
   </main>
   <footer class="bg-dark text-center text-white p-3 ">
-    <h2 class="fs-6">Derecho reservados para simon </h2>
+    <h2 class="fs-6">Sitio creado por simon scheffer</h2>
   </footer>
 
 

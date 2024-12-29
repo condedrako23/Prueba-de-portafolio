@@ -9,7 +9,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(https://cdn.pixabay.com/photo/2018/09/16/22/08/software-3682509_1280.jpg);
+  background-image: url(https://cdn.pixabay.com/photo/2016/11/30/20/44/computer-1873831_1280.png);
   background-size: cover;
 }
 
@@ -27,19 +27,5 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 10px;
-
-}
-
-.form {
-  height: 100vh;
-}
-
-.cont-form {
-  margin: 20px;
-  padding: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: solid black;
 
 }
